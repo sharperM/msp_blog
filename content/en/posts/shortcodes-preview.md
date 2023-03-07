@@ -7,9 +7,6 @@ tags: ["preview", "shortcodes"]
 categories: ["Demos"] 
 ---
 
-## Twiiter
-
-{{< tweet 877500564405444608 >}}
 
 
 ## Google Map
