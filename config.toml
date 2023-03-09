@@ -2,7 +2,7 @@
 # ---- General Settings --------------- #
 # ------------------------------------- #
 baseURL = "https://sharperM.GitHub.io"
-title = "Den"
+title = "sharperM"
 theme = "hugo-theme-den"
 #enableRobotsTXT = true       # generate robots.txt
 enableEmoji = true           # use emoji support
@@ -20,9 +20,7 @@ rssLimit = 20                # limit number of entries in RSS feeds
 paginate = 20
 paginatePath = "page"
 
-# Syntax Hightlight
-PygmentsCodeFences = true
-PygmentsUseClasses = true    # required for shhighlight shortcode
+
 
 # service plugins
 disqusShortname = ""         # disqus_shortname
@@ -58,7 +56,7 @@ defaultContentLanguageInSubdir = true
   # site info (optional)
   keywords = ["Hugo", "theme","den"]
   description = "A simple theme for Hugo"
-  logoTitle = "Den" # shown on top-left, default: title
+  logoTitle = "sharperM's blog" # shown on top-left, default: title
   siteLogoImage = "images/globe.svg"     # shown besides logoTitle
   # headerTitle = "Den"                   # default: title
   headerImage = "images/background.jpg"
@@ -175,10 +173,10 @@ defaultContentLanguageInSubdir = true
   languageCode = "zh-cn"
   languageName = "简体中文"
   contentDir = "content/zh-cn"
-  weight = 2
+  weight = 4
 
   [languages.zh-cn.params]
-    description = "一个简单的布景。"
+    description = "将精力花在自己能控制的事物上"
 
   [[languages.zh-cn.menu.main]]
     name = "笔记"
@@ -195,10 +193,49 @@ defaultContentLanguageInSubdir = true
     name = "GitHub"
     weight = 10
     identifier = "github"
-    url = "https://github.com/shaform/hugo-theme-den/"
+    url = "https://github.com/sharperM/"
 
   [[languages.zh-cn.menu.links]]
     name = "关于我"
     weight = 10
     identifier = "about-me"
-    url = "https://github.com/shaform/hugo-theme-den/"
+    url = "https://sharperM.github.io/"
+
+
+
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+ 
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'monokai'
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
