@@ -3,7 +3,7 @@ title: "C++11 的线程  join()函数"
 date: 2023-03-07T23:02:32+08:00
 draft: false
 ---
-```cpp
+```cpp {hl_lines=[2 "17-18"]}
 // thread example1.cpp
 #include  <iostream>        // std::cout
 #include  <thread>        // std::thread

@@ -219,7 +219,7 @@ defaultContentLanguageInSubdir = true
     verbose = false
     workingFolderCurrent = false
     [markup.asciidocExt.attributes]
- 
+
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
@@ -228,12 +228,12 @@ defaultContentLanguageInSubdir = true
     hl_inline = false
     lineAnchors = ''
     lineNoStart = 1
-    lineNos = false
+    lineNos = false 
     lineNumbersInTable = true
     noClasses = true
     noHl = false
     style = 'monokai'
-    tabWidth = 4
+    tabWidth = 0
   [markup.tableOfContents]
     endLevel = 3
     ordered = false
