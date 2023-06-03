@@ -26,6 +26,24 @@ git remote add origin git@codeup_2:64089bfe56067d3aad3e0e4c/cocos_creator_projec
 
 maishaopei@youmieyou.onaliyun.com
 
+搜索多仓库 ssh 配置
+
+编辑~/.ssh/config 文件
+
+增加
+```ini
+		#工作账号
+		Host codeup_1
+		HostName codeup.aliyun.com
+		IdentityFile ~/.ssh/id_rsa
+		
+		#我的码云账号
+		Host codeup_2
+		HostName codeup.aliyun.com
+		IdentityFile ~/.ssh/id_maishaopei_youmieyou
+```
+
+
 Compose 官方学习文档
 https://developer.android.google.cn/jetpack/compose/mental-model?hl=zh-cn
 
