@@ -2,6 +2,8 @@
 title: "Liunx 文件系统储存占用分析命令"
 date: 2023-03-30T19:54:51+08:00
 draft: true
+tags: ["Linux"]
+categories: ["Notes"]
 ---
     1.查看当前目录
     df -h

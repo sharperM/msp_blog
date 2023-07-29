@@ -1,3 +1,14 @@
+---
+title: "工作日记-任务 cocos creator 游戏 上架 ios"
+date: 2023-07-30T20:11:04+08:00
+lastmod: 2023-07-30T20:10:57+08:00
+draft: true
+tags: ["notes"]
+categories: ["Notes"]
+authors:
+- "sharperM"
+---
+
 任务 cocos creator 游戏 上架 ios
 
 1 需要提供 微信登录
