@@ -3,7 +3,7 @@ title: "android 核心编程笔记"
 date: 2023-05-18T20:11:04+08:00
 lastmod: 2023-05-18T20:10:57+08:00
 draft: true
-tags: ["notes"]
+tags: ["Android"]
 categories: ["Notes"]
 authors:
 - "sharperM"

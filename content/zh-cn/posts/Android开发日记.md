@@ -3,7 +3,7 @@ title: "Android开发日记"
 date: 2016-03-23T20:11:04+08:00
 lastmod: 2023-03-06T20:10:57+08:00
 draft: true
-tags: ["notes"]
+tags: ["Android"]
 categories: ["Notes"]
 authors:
 - "sharperM"

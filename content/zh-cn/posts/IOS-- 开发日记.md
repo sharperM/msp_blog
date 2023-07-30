@@ -3,7 +3,7 @@ title: "工作日记-任务 cocos creator 游戏 上架 ios"
 date: 2023-07-30T20:11:04+08:00
 lastmod: 2023-07-30T20:10:57+08:00
 draft: true
-tags: ["notes"]
+tags: ["cocos creator"]
 categories: ["Notes"]
 authors:
 - "sharperM"
