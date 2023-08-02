@@ -116,3 +116,28 @@ maishaopei@youmieyou.onaliyun.com
 		HostName codeup.aliyun.com
 		IdentityFile ~/.ssh/id_maishaopei_youmieyou
 ```
+
+
+
+ssh 使用证书和 特定的端口
+
+修改 config 文件
+
+```ini
+
+		#工作账号
+		Host gitlab3
+		HostName 192.168.0.197
+		Port 12022
+		IdentityFile ~/.ssh/gitlab_key3
+
+```
+
+
+clone 命令用 
+
+```cmd
+
+	git clone git@gitlab3:maishaopoei/oasis.git oasis3
+```
+
