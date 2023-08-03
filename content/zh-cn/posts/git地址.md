@@ -116,3 +116,51 @@ maishaopei@youmieyou.onaliyun.com
 		HostName codeup.aliyun.com
 		IdentityFile ~/.ssh/id_maishaopei_youmieyou
 ```
+
+
+
+ssh 使用证书和 特定的端口
+
+修改 config 文件
+
+```ini
+
+		#工作账号
+		Host gitlab3
+		HostName 192.168.0.197
+		Port 12022
+		IdentityFile ~/.ssh/gitlab_key3
+
+```
+
+
+clone 命令用 
+
+```cmd
+	git clone git@gitlab3:maishaopoei/oasis.git oasis3
+
+
+
+	//Existing Git repository
+	cd existing_repo
+	git remote rename origin old-origin
+	git remote add origin ssh://git@localhost:12022/maishaopoei/lkddz_creator.git
+	git push -u origin --all
+	git push -u origin --tags
+	
+	git remote rename origin old-origin
+
+git remote add gitlab  git@gitlab3:maishaopoei/lkddz_creator.git
+git remote add gitlab  git@gitlab3:maishaopoei/svr_pxq.git
+git remote add gitlab  git@gitlab3:maishaopoei/svr_xxl.git
+git remote add gitlab  git@gitlab3:maishaopoei/svr_tn.git
+git remote add gitlab  git@gitlab3:maishaopoei/svr_fpj.git
+git remote add gitlab  git@gitlab3:maishaopoei/svr_ddz.git
+git remote add gitlab  git@gitlab3:maishaopoei/lksql.git
+git remote add gitlab  git@gitlab3:maishaopoei/lkgamecore.git
+
+
+
+	git push -u gitlab --all
+	git push -u gitlab --tags
+```
