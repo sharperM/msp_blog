@@ -175,3 +175,6 @@ git remote add gitlab  git@gitlab3:maishaopoei/lkgamecore.git
 	FLUSH PRIVILEGES;
 # sql 退出
 	exit;
+
+
+!Be2133k

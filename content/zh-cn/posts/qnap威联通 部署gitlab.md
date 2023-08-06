@@ -1,7 +1,7 @@
 ---
 title: "qnap威联通部署gitlab"
 date: 2023-08-05T10:25:31+08:00
-draft: true
+draft: false
 tags: ["gitlab","qnap","威联通",'docker']
 categories: ["Notes"]
 authors:
