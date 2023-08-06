@@ -56,7 +56,7 @@ linux 直接使用ssh命令
 查看磁盘挂载情况
     判断哪些是挂载的硬盘
 
-    --hostname www.loveicu.top \ #域名
+    --hostname www.example.com \ #域名
     --publish 11443:443 --publish 11080:80 --publish 11022:22 \ #端口映射
     --name gitlab \ #容器名
     --restart always \ #重启策略
