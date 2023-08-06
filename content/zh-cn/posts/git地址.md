@@ -168,13 +168,22 @@ git remote add gitlab  git@gitlab3:maishaopoei/lkgamecore.git
 
 
 # sql 创建 可以远程访问的账号sealy 密码是 123456
-	CREATE USER 'sealy'@'192.168.101.131' IDENTIFIED BY '123456';
+	CREATE USER 'sealy'@'%' IDENTIFIED BY '!Be2133k';
+	ALTER USER 'sealy'@'%' IDENTIFIED BY '!Be2133k';
+	ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
 # sql  sealy 账号授权
 	GRANT ALL PRIVILEGES ON db_breakthrough.* TO 'sealy'@'%';
+
 # sql 刷新权限
 	FLUSH PRIVILEGES;
 # sql 退出
 	exit;
 
+GRANT ALL  PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION;    
 
 !Be2133k
+ mysql -h192.168.154.13 -P3306 -usealy -p'!Be2133k'
+
+
+
+ ALTER USER 'sealy'@'%' IDENTIFIED WITH mysql_native_password BY '!Be2133k';
