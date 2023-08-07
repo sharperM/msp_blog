@@ -166,24 +166,71 @@ git remote add gitlab  git@gitlab3:maishaopoei/lkgamecore.git
 ```
 
 
+mysql 操作
+
+```sql
+
+
+```
+
+# 删除账号
+
+```sql
+
+DROP USER 'sealy'@'192.168.101.131';
+
+```
 
 # sql 创建 可以远程访问的账号sealy 密码是 123456
+
+```sql
 	CREATE USER 'sealy'@'%' IDENTIFIED BY '!Be2133k';
 	ALTER USER 'sealy'@'%' IDENTIFIED BY '!Be2133k';
 	ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+```
+
 # sql  sealy 账号授权
+```sql
+
 	GRANT ALL PRIVILEGES ON db_breakthrough.* TO 'sealy'@'%';
 
-# sql 刷新权限
-	FLUSH PRIVILEGES;
-# sql 退出
-	exit;
+```
 
-GRANT ALL  PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION;    
+# sql 刷新权限
+```sql
+	FLUSH PRIVILEGES;
+
+```
+# sql 退出
+```sql
+	exit;
+```
+
+```sql
+
+GRANT ALL  PRIVILEGES ON *.* TO 'myuser'@'%'
+
+```
+   
 
 !Be2133k
- mysql -h192.168.154.13 -P3306 -usealy -p'!Be2133k'
+show databases;
 
+连接数据库
 
+	 mysql -h192.168.154.13 -P3306 -usealy -p'!Be2133k'
 
- ALTER USER 'sealy'@'%' IDENTIFIED WITH mysql_native_password BY '!Be2133k';
+1.使用root账户登入mysql,查询目前mysql的用户的身份验证方式。
+	
+```sql
+
+	select host,user,plugin,authentication_string from mysql.user;
+
+```
+
+# 修改验证方式
+```sql
+
+	ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456'
+	ALTER USER 'sealy'@'%' IDENTIFIED WITH mysql_native_password BY '!Be2133k';
+```
